@@ -1,0 +1,37 @@
+{
+  "name": "panda-css-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf node_modules .next styled-system"
+  },
+  "dependencies": {
+    "@pandacss/types": "^0.15.5",
+    "@types/node": "20.8.4",
+    "@types/react": "18.2.28",
+    "@types/react-dom": "18.2.13",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.4",
+    "framer-motion": "^10.16.4",
+    "gsap": "latest",
+    "ms": "^2.1.3",
+    "next": "13.5.4",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@pandacss/dev": "^0.15.5",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
