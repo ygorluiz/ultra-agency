@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react"
 
-import { gsap } from "gsap"
+import gsap from "gsap"
 
 import { useIsomorphicLayoutEffect } from "@hooks/useIsomorphicEffect"
 
