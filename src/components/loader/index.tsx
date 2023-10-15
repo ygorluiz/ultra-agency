@@ -27,7 +27,7 @@ const Loader = ({ timeline }: { timeline?: Timeline }) => {
   const progressNumberRef = useRef(null)
   const wordGroupRef = useRef(null)
 
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     timeline &&
       timeline
         .add(IntroAnimation(wordGroupRef))
