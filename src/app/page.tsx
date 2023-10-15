@@ -17,9 +17,9 @@ export default function Home() {
   const [tl, setTl] = useState<Timeline>()
 
   useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context(() => {
+    const ctx = gsap.context((self) => {
       const tl = gsap.timeline({
-        onComplete: () => setLoaderFinished(true),
+        onComplete: () => self.add(() => setLoaderFinished(true)), // <-- this is the key
       })
       setTl(tl)
     })
