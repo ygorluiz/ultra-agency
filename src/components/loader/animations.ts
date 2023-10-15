@@ -2,7 +2,7 @@ import { MutableRefObject } from "react"
 
 import { gsap } from "gsap"
 
-export const introAnimation = (target: MutableRefObject<null>) => {
+export const IntroAnimation = (target: MutableRefObject<null>) => {
   const tl = gsap.timeline()
   tl.to(target.current, {
     yPercent: -80,
@@ -12,7 +12,7 @@ export const introAnimation = (target: MutableRefObject<null>) => {
   return tl
 }
 
-export const collapseWords = (target: MutableRefObject<null>) => {
+export const CollapseWords = (target: MutableRefObject<null>) => {
   const tl = gsap.timeline()
   tl.to(target.current, {
     "clip-path": "polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%)",
@@ -23,7 +23,7 @@ export const collapseWords = (target: MutableRefObject<null>) => {
   return tl
 }
 
-export const progressAnimation = (
+export const ProgressAnimation = (
   target: MutableRefObject<null>,
   targetNumber: MutableRefObject<null>
 ) => {

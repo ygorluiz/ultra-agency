@@ -1,16 +1,12 @@
 import { defineConfig } from "@pandacss/dev"
 
-import { globalCss } from "@theme//global-css"
 import { breakpoints } from "@theme/breakpoints"
 import { conditions } from "@theme/conditions"
+import { globalCss } from "@theme/global-css"
 import { keyframes } from "@theme/keyframes"
 import { semanticTokens } from "@theme/semantic-tokens"
 import { textStyles } from "@theme/text-styles"
 import { tokens } from "@theme/tokens"
-
-
-
-
 
 export default defineConfig({
   preflight: true,

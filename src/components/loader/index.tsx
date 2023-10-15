@@ -6,7 +6,7 @@ import gsap from "gsap"
 
 import { useIsomorphicLayoutEffect } from "@hooks/useIsomorphicEffect"
 
-import { collapseWords, introAnimation, progressAnimation } from "./animations"
+import { CollapseWords, IntroAnimation, ProgressAnimation } from "./animations"
 import { words } from "./data"
 import {
   LoaderStyled,
@@ -30,9 +30,9 @@ const Loader = ({ timeline }: { timeline?: Timeline }) => {
   useIsomorphicLayoutEffect(() => {
     timeline &&
       timeline
-        .add(introAnimation(wordGroupRef))
-        .add(progressAnimation(progressRef, progressNumberRef), 0)
-        .add(collapseWords(loaderRef), "-=1")
+        .add(IntroAnimation(wordGroupRef))
+        .add(ProgressAnimation(progressRef, progressNumberRef), 0)
+        .add(CollapseWords(loaderRef), "-=1")
   }, [timeline])
   return (
     <Wrapper>
