@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@pandacss/types':
-    specifier: ^0.15.5
-    version: 0.15.5
+    specifier: ^0.22.0
+    version: 0.22.0
   '@types/node':
     specifier: 20.8.6
     version: 20.8.6
@@ -1354,6 +1354,11 @@ packages:
 
   /@pandacss/types@0.15.5:
     resolution: {integrity: sha512-3XNmWN/UhOgTiPUCBOBJEtwgxPOcSCZIP5fY9F/xc0BrwMUcZzcT0AKb7fWq0xY2U4w6SreS3HeoMyINWq7c6A==}
+    dev: true
+
+  /@pandacss/types@0.22.0:
+    resolution: {integrity: sha512-VT431rj3Xms4yHDjseZiLmntg16IbicU/7GmRWB1pTCMbEuQCC8v23nK6DYke+DGsMc9W7ujNntQbyw5OgBsNg==}
+    dev: false
 
   /@pkgr/utils@2.4.2:
     resolution: {integrity: sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==}
